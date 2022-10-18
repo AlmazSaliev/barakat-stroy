@@ -2,9 +2,10 @@ import { Link, useParams } from "react-router-dom";
 import styled from "@emotion/styled";
 import Card, { room } from "./UI/Card";
 import { Floor, ImgApartments } from "../constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LoadingSpinner from "./UI/LoadingSpinner";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { apartmentActions } from "../store/slice/AllDataApartment";
 
 const ProjectDetail = () => {
   const apartment = useSelector((store) => store.allapartmnet?.apartment);
@@ -40,7 +41,10 @@ const ProjectDetail = () => {
     }
     return i;
   });
-
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(apartmentActions.getAllApartment());
+  }, [dispatch]);
   const [show, setshow] = useState(false);
   setTimeout(() => {
     setshow(true);
@@ -121,6 +125,9 @@ const WrapperSt = styled("p")`
 const Wrappert = styled("div")`
   font-weight: bold;
   margin-bottom: 2%;
+  @media screen and (max-width: 500px) {
+    font-size: 2.2vw;
+  }
 `;
 const BorderBottom = styled("span")`
   position: absolute;
@@ -164,4 +171,8 @@ const Container = styled("div")`
   margin: 0 auto;
   margin-top: 20px;
   gap: 15px;
+  @media screen and (max-width: 800px){
+    width: 100%;
+    margin-left: -3.6%;
+  }
 `;

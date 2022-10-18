@@ -1,15 +1,10 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import { ImgApartments } from "../constants";
-import { apartmentActions } from "../store/slice/AllDataApartment";
 import CardApartments from "./CardApartments";
 
 const Projects = () => {
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(apartmentActions.getAllApartment());
-  }, [dispatch]);
+ 
   useEffect(() => {
     window.scroll(0, 0);
   }, []);

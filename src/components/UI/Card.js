@@ -157,9 +157,12 @@ const WrapperFloor = styled("div")`
   & > p {
     font-family: "Gotham", "Arial", "Helvetica Neue", Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 220%;
+    font-size: 2vw;
     position: absolute;
     z-index: 2;
+    @media screen and (max-width: 500px) {
+      font-size: 3vw;
+    }
   }
 `;
 const CardWrap = styled("div")`
@@ -167,6 +170,9 @@ const CardWrap = styled("div")`
   height: 80%;
   position: relative;
   margin: 0 auto;
+  /* @media screen and (max-width: 800px){
+    width: 130%;
+  } */
 `;
 const Section = styled("div")`
   margin: 0 auto;
@@ -183,14 +189,23 @@ const Aside = styled("aside")`
   font-weight: 500;
 `;
 const Redp = styled("p")`
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: red;
+  @media screen and (max-width: 500px) {
+    font-size: 2.5vw;
+  }
 `;
 const Yellowp = styled("p")`
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: orange;
+  @media screen and (max-width: 500px) {
+    font-size: 2.5vw;
+  }
 `;
 const Bluep = styled("p")`
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: blue;
+  @media screen and (max-width: 500px) {
+    font-size: 2.5vw;
+  }
 `;

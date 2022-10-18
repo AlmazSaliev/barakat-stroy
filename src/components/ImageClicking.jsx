@@ -226,12 +226,15 @@ const BackgroundImg = styled.img`
   width: 100%;
   vertical-align: middle;
   border-style: none;
-  margin-left: 24px;
+  margin-left: 3.2%;
 `;
 const WrapperBlock = styled.div`
   position: relative;
   width: 70%;
   margin: 0 auto;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
   & > svg {
     position: absolute;
     top: 0;
