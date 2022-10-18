@@ -6,7 +6,7 @@ import House3 from "../assets/images/houseproject3.jpg";
 import HouseLogo3 from "../assets/icons/ankara_logo.png";
 import House4 from "../assets/images/houseproject4.jpg";
 import HouseLogo4 from "../assets/icons/bereke_logo.png";
-import Floor2 from "../assets/images/floor2.jpg";
+import Floor2 from "../assets/images/floor.rayan.jpg";
 import Room1 from "../assets/images/room1.jpg";
 import Room2 from "../assets/images/room2.jpg";
 import Room3 from "../assets/images/room3.jpg";
@@ -28,7 +28,7 @@ export const ImgApartments = [
   {
     id: 1,
     images: House1,
-    title: "райан",
+    title: "RAYAN",
     address: "ул.Чар / мкрн Кок-Жар",
     logo: HouseLogo1,
   },

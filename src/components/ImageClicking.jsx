@@ -7,7 +7,7 @@ import styled from "styled-components";
 const ImageClicking = (props) => {
   return (
     <WrapperBlock>
-      <svg viewBox="0 0 5000 3897">
+      <svg viewBox="0 0 4600 3840">
         <Link to={`${props.id}/${props.idroom1}`}>
           <path
             class="part"
@@ -17,7 +17,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom1 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -30,7 +30,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom2 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -43,7 +43,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom3 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -56,7 +56,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom4 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -69,7 +69,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom5 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -82,7 +82,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom6 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -95,7 +95,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom7 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -108,7 +108,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom8 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -121,7 +121,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom9 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -134,7 +134,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom10 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -147,7 +147,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom11 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -160,7 +160,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom12 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -173,7 +173,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom13 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -186,7 +186,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom14 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -199,7 +199,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom15 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -212,7 +212,7 @@ const ImageClicking = (props) => {
                 ? "#f500006e"
                 : props?.statusroom16 === "бронировано"
                 ? "#fa9e146f"
-                : "#141adc41"
+                : "#f2e3ce16"
             }
           ></path>
         </Link>
@@ -226,9 +226,12 @@ const BackgroundImg = styled.img`
   width: 100%;
   vertical-align: middle;
   border-style: none;
+  margin-left: 24px;
 `;
 const WrapperBlock = styled.div`
   position: relative;
+  width: 70%;
+  margin: 0 auto;
   & > svg {
     position: absolute;
     top: 0;

@@ -149,12 +149,15 @@ export default Card;
 const WrapperFloor = styled("div")`
   position: absolute;
   width: 20%;
-  height: 20%;
-  color: darkgreen;
+  height: 30%;
+  color: #0b363c;
   top: 10%;
   right: 23%;
+  bottom: 20px;
   & > p {
-    font-size: 2vw;
+    font-family: "Gotham", "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 220%;
     position: absolute;
     z-index: 2;
   }
@@ -171,12 +174,13 @@ const Section = styled("div")`
 `;
 const Aside = styled("aside")`
   position: absolute;
-  top: 15%;
+  top: 20%;
   right: 15%;
   border-radius: 2px solid;
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   width: 30%;
   padding: 2%;
+  font-weight: 500;
 `;
 const Redp = styled("p")`
   font-size: 2vw;

@@ -57,20 +57,22 @@ const ProjectDetail = () => {
         <h1>{title.title}</h1>
         <WrapperSt>Статистика</WrapperSt>
         <BorderBottom />
-        <p>
-          Этажей: {Floor.length} , квартир: {Floor.length * room.length} , из
-          них: продано:
-          <WrapperSales> {allstatistic.sales?.length || 0}</WrapperSales> /
-          бронировано:
-          <WrapperBooking>{allstatistic.booking?.length || 0}</WrapperBooking> /
-          свободные:
-          <WrapperFree>
-            {Floor.length * room.length -
-              allstatistic.sales?.length -
-              allstatistic.booking?.length || Floor.length * room.length}
-          </WrapperFree>
-          .
-        </p>
+        <Wrappert>
+          <div>
+            Этажей: {Floor.length} , квартир: {Floor.length * room.length} , из
+            них: продано:
+            <WrapperSales> {allstatistic.sales?.length || 0}</WrapperSales> /
+            бронировано:{" "}
+            <WrapperBooking>{allstatistic.booking?.length || 0}</WrapperBooking>{" "}
+            / свободные:
+            <WrapperFree>
+              {Floor.length * room.length -
+                allstatistic.sales?.length -
+                allstatistic.booking?.length || Floor.length * room.length}
+            </WrapperFree>
+            .
+          </div>
+        </Wrappert>
       </WrapperText>
       {show || <LoadingSpinner />}
       <Container>
@@ -113,12 +115,15 @@ const WrapperFree = styled("span")`
 `;
 const WrapperSt = styled("p")`
   font-weight: bold;
-  border-bottom: 0.4vw solid darkgreen;
+  border-bottom: 0.2vw solid darkgreen;
+  margin-bottom: 2%;
+`;
+const Wrappert = styled("div")`
+  font-weight: bold;
   margin-bottom: 2%;
 `;
 const BorderBottom = styled("span")`
   position: absolute;
-  box-shadow: 0px 5px 10px 1px darkgreen;
   height: 2%;
   width: 100%;
   left: 0;
@@ -133,6 +138,9 @@ const WrapperText = styled("div")`
   color: #0b363c;
   & > h1 {
     text-transform: capitalize;
+  }
+  p {
+    font-family: "Gotham";
   }
   @media screen and (max-width: 700px) {
     font-size: 2vw;
@@ -152,7 +160,7 @@ const WrapperContainer = styled("div")`
 const Container = styled("div")`
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 20px;
   gap: 15px;
